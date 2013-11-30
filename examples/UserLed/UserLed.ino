@@ -3,6 +3,9 @@
 ** loovee 2013-6-18
 ** https://github.com/reeedstudio/xadow
 **
+** Sets onboard leds using the xadow library. You could also directly 
+** blink pins 11 and 17 instead.
+**
 ** This library is free software; you can redistribute it and/or
 ** modify it under the terms of the GNU Lesser General Public
 ** License as published by the Free Software Foundation; either
