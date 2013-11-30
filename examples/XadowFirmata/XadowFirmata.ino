@@ -3,8 +3,25 @@
  * BLE module and then replace Firmata.begin(57600); call with
  * Firmata.begin(Serial1);
  *
- * So far only luck on Arduino 1.0 branch, not 1.5
+ * If you're on arduino 1.0.x (IE NOT 1.5x) you need to upgrade your firmata
+ * Download a newer version from here https://github.com/firmata/arduino
+ * then on OSX
+ * 
+ * Navigate to the Arduino application.
+ * Right-click on the Application icon and choose 'Show Package Contents'
+ * Navigate to: Contents/Resources/Java/libraries/ and replace the existing Firmata directory with the one you downloaded.
+ * Attach the Leonardo board to your computer and open the Arduino application.
+ * Navigate to: Breakout/firmware/AdvancedFirmata/.
+ * Compile and upload AdvancedFirmata.ino to your board.
  *
+ * on Windows or Linux
+ *
+ * Navigate to the Arduino application folder on your hard drive.
+ * Open the libraries folder and replace the existing Firmata directory with the one you downloaded.
+ *
+ * I havent gotten Xadow to work on 1.5.x yet, at which point that wouldn't be necessary
+ *
+ * 
  * Firmata is a generic protocol for communicating with microcontrollers
  * from software on a host computer. It is intended to work with
  * any host computer software package.
