@@ -6,6 +6,10 @@
 ** Outputs pressure in kPa, in the US we use inHG. Google kPs to inHG
 ** for a translation
 **
+** This sketch is self contained and needs no external libraries beyond
+** xadow. However there are nice external libraries like Adafruit's:
+** https://github.com/adafruit/Adafruit-BMP085-Library
+**
 ** This library is free software; you can redistribute it and/or
 ** modify it under the terms of the GNU Lesser General Public
 ** License as published by the Free Software Foundation; either
