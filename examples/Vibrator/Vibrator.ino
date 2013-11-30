@@ -3,6 +3,9 @@
 ** loovee 2013-6-18
 ** https://github.com/reeedstudio/xadow
 **
+** Example is more complicated than it has to be.  Motor is on
+** digital pins (two of them) and can be treated just like a blink sketch
+**
 ** This library is free software; you can redistribute it and/or
 ** modify it under the terms of the GNU Lesser General Public
 ** License as published by the Free Software Foundation; either
