@@ -25,21 +25,21 @@ void vibrate(unsigned char OnOff)
 {
     if(OnOff)
     {
-        PORTB |= 0x04;
-        PORTF |= 0x01;
+      digitalWrite(16,HIGH);
+      digitalWrite(A5,HIGH);
     }
     else
     {
-        PORTB &=~ 0x04;
-        PORTF &=~ 0x01;
+      digitalWrite(16,LOW);
+      digitalWrite(A5,LOW);
     }
 }
 
 void setup()
 {
     Xadow.init();
-    DDRF |= 0x01;                   // init IO
-    DDRB |= 0x04;
+    pinMode(A5,OUTPUT);                   // init IO
+    pinMode(16,OUTPUT);
 }
 
 void loop()
