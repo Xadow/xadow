@@ -68,7 +68,12 @@ void loop()
     getTime(td);
     delay(1000);
 
-    cout << "20" << td[0] << '/' << td[1] << '/' << td[2] << tabl;
+    //add leading zero
+    if(td[0]==0){
+      cout << "200" << td[0] << '/' << td[1] << '/' << td[2] << tabl;
+    }else{
+      cout << "20" << td[0] << '/' << td[1] << '/' << td[2] << tabl;
+    }
     cout << td[4] << ":" << td[5] << ":" << td[6] << endl;
 }
 
