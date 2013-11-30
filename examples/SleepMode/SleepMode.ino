@@ -26,10 +26,10 @@ void setup()
 {
 
     Serial.begin(115200);
-    // while(!Serial);
+    while(!Serial);
     Xadow.init();
     
-    delay(2000);
+    delay(2000); //Leave this or it will be asleep and you can't program it!
     cout << "init over" << endl;
 }
 
