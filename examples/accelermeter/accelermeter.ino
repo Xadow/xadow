@@ -3,6 +3,14 @@
 ** loovee 2013-6-18
 ** https://github.com/reeedstudio/xadow
 **
+** This sketch is self contained and needs no external libraries beyond
+** xadow. However there are nice external libraries like Seeed:
+** https://github.com/Seeed-Studio/Grove_3Axis_Digital_Accelerometer_ADXL345
+**
+** or Adafruit:
+** https://github.com/adafruit/Adafruit_ADXL345
+** https://github.com/adafruit/Adafruit_Sensor
+**
 ** This library is free software; you can redistribute it and/or
 ** modify it under the terms of the GNU Lesser General Public
 ** License as published by the Free Software Foundation; either

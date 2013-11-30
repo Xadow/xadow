@@ -3,6 +3,9 @@
 ** loovee 2013-6-18
 ** https://github.com/reeedstudio/xadow
 **
+** Outputs pressure in kPa, in the US we use inHG. Google kPs to inHG
+** for a translation
+**
 ** This library is free software; you can redistribute it and/or
 ** modify it under the terms of the GNU Lesser General Public
 ** License as published by the Free Software Foundation; either
