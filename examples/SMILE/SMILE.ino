@@ -1,9 +1,13 @@
 /*-----------------------------------------------------------------------------------
-** demo of xadow: smile, use OLED, Barometer, Vibrator and AccelerMeter
+** demo of xadow: smile, use OLED, Barometer, AccelerMeter
 ** you should download ADXL345 Library here: http://www.seeedstudio.com/wiki/Xadow_3-Axis_Accelerometer
 ** download SeeedOled.h: http://www.seeedstudio.com/wiki/Xadow_OLED
 ** loovee 2013-6-18
 ** https://github.com/reeedstudio/xadow
+**
+** I have no idea why this is called smile. Shows the barometer on the 
+** OLED while still. When shaken, the device shows a picture from Star Trek? 
+** jacobrosenthal 2013-11-30
 **
 ** This library is free software; you can redistribute it and/or
 ** modify it under the terms of the GNU Lesser General Public
