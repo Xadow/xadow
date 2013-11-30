@@ -3,6 +3,10 @@
 ** loovee 2013-6-18
 ** https://github.com/reeedstudio/xadow
 **
+** Burn this, then look at a clock and open the serial monitor--
+** resetting the device and setting the time. Then burn some other 
+** sketch so you don't reset it :)
+**
 ** This library is free software; you can redistribute it and/or
 ** modify it under the terms of the GNU Lesser General Public
 ** License as published by the Free Software Foundation; either
