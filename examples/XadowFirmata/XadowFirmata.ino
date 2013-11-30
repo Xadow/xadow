@@ -18,7 +18,6 @@
  *
  * I havent gotten Xadow to work on 1.5.x yet, at which point that wouldn't be necessary
  * 
- * 
  * Firmata is a generic protocol for communicating with microcontrollers
  * from software on a host computer. It is intended to work with
  * any host computer software package.
