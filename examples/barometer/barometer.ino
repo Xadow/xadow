@@ -33,6 +33,8 @@
 
 #define ADDRBARO        0x77
 
+long p,t;
+
 char bmp085Read(unsigned char address)
 {
     unsigned char data;
@@ -63,9 +65,8 @@ int bmp085ReadInt(unsigned char address)
 }
 
 
-long getBaro()
+long updateBaro()
 {
-
     long b5;
     long x1, x2;
     unsigned int ac5 = bmp085ReadInt(0xB2);
@@ -90,7 +91,9 @@ long getBaro()
     x2 = ((long)mc << 11)/(x1 + md);
     b5 = (x1 + x2);
 
-    long x3, b3, b6, p;
+    t = (b5 + 8)/16;
+    
+    long x3, b3, b6;
     unsigned long b4, b7;
 
     int ac1 = bmp085ReadInt(0xAA);
@@ -136,9 +139,8 @@ long getBaro()
     x2 = (-7357 * p)>>16;
     p += (x1 + x2 + 3791)>>4;
 
-    return p;
-
 }
+
 
 void setup()
 {
@@ -153,8 +155,11 @@ void setup()
 
 void loop()
 {
-    cout << (float)getBaro()/1000.0 << " kPa" << endl;
+    updateBaro();
+    cout << (float)p/1000.0 << " kPa" << endl;
+    cout << (float)t/10 << " C" << endl;
     delay(500);
+
 }
 
 /*********************************************************************************************************
