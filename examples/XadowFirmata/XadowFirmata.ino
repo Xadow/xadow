@@ -3,6 +3,8 @@
  * match our BLE module and then replace Firmata.begin(57600); call with
  * Firmata.begin(Serial1);
  *
+ * Also added the stringCallback which is usefull to fire local functions
+ *
  * If you're on arduino 1.0.x (IE NOT 1.5x) you need to upgrade your firmata
  * Download a newer version from here https://github.com/firmata/arduino
  * then on OSX
@@ -603,8 +605,10 @@ void systemResetCallback()
 
 void setup() 
 {
+  Serial.begin(9600);
   Firmata.setFirmwareVersion(FIRMATA_MAJOR_VERSION, FIRMATA_MINOR_VERSION);
 
+  Firmata.attach(STRING_DATA, stringCallback);
   Firmata.attach(ANALOG_MESSAGE, analogWriteCallback);
   Firmata.attach(DIGITAL_MESSAGE, digitalWriteCallback);
   Firmata.attach(REPORT_ANALOG, reportAnalogCallback);
@@ -657,4 +661,16 @@ void loop()
       }
     }
   }
+}
+
+void stringCallback(char *myString)
+{
+  //compare strings here and call a function or something
+    Firmata.sendString(myString);
+    
+    Serial.println(strlen(myString));
+    for( int i = 0; i<strlen(myString); i++)
+    {
+      Serial.print(*myString+i,HEX);
+    }
 }
