@@ -3,6 +3,22 @@
 ** loovee 2013-6-18
 ** https://github.com/reeedstudio/xadow
 **
+** Retrieves date and time from the RTC and formats it for the Console output. Uses Serial
+** and I2C pins. 
+**
+** Refer to the Big Table of Xadow modules for more information and to 
+** avoid conflicts http://www.seeedstudio.com/wiki/Xadow_IO_pin_mapping 
+**
+** This sketch is self contained and needs no external libraries beyond
+** xadow.
+**
+** This code was originally written for the Xadow series of products 
+** http://www.seeedstudio.com/depot/index.php?main_page=advanced_search_result&search_in_description=0&keyword=xadow&x=-1133&y=-60
+** by Seeed Studio. http://www.seeedstudio.com/
+** 
+** Seeed makes all of its devices Open Source Hardware http://www.oshwa.org/
+** which means you can find the design files to alter it or make your own!
+**
 ** This library is free software; you can redistribute it and/or
 ** modify it under the terms of the GNU Lesser General Public
 ** License as published by the Free Software Foundation; either

@@ -1,13 +1,26 @@
 /*-----------------------------------------------------------------------------------
 ** demo of xadow: smile, use OLED, Barometer, AccelerMeter
-** you should download ADXL345 Library here: http://www.seeedstudio.com/wiki/Xadow_3-Axis_Accelerometer
-** download SeeedOled.h: http://www.seeedstudio.com/wiki/Xadow_OLED
 ** loovee 2013-6-18
 ** https://github.com/reeedstudio/xadow
 **
-** I have no idea why this is called smile. Shows the barometer on the 
-** OLED while still. When shaken, the device shows a picture from Star Trek? 
-** jacobrosenthal 2013-11-30
+** Shows the barometer on the OLED while still. When shaken, the device shows
+** a picture from Star Trek. Uses Serial and I2C pins. 
+** (I have no idea why this is called smile. -- @jacobrosenthal 2013-11-30)
+**
+** Refer to the Big Table of Xadow modules for more information and to 
+** avoid conflicts http://www.seeedstudio.com/wiki/Xadow_IO_pin_mapping 
+**
+** In addition to the Xadow library this sketch needs the Accelerometer librarary:
+** http://www.seeedstudio.com/wiki/Xadow_3-Axis_Accelerometer
+** and the SeeedOled library: 
+** http://www.seeedstudio.com/wiki/Xadow_OLED
+**
+** This code was originally written for the Xadow series of products 
+** http://www.seeedstudio.com/depot/index.php?main_page=advanced_search_result&search_in_description=0&keyword=xadow&x=-1133&y=-60
+** by Seeed Studio. http://www.seeedstudio.com/
+** 
+** Seeed makes all of its devices Open Source Hardware http://www.oshwa.org/
+** which means you can find the design files to alter it or make your own!
 **
 ** This library is free software; you can redistribute it and/or
 ** modify it under the terms of the GNU Lesser General Public
