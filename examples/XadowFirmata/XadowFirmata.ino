@@ -665,12 +665,16 @@ void loop()
 
 void stringCallback(char *myString)
 {
+  //repeat the string back as confirmation?
+  Firmata.sendString(myString);
+
   //compare strings here and call a function or something
-    Firmata.sendString(myString);
-    
-    Serial.println(strlen(myString));
-    for( int i = 0; i<strlen(myString); i++)
-    {
-      Serial.print(*myString+i,HEX);
-    }
+  if (strcmp(myString, "setup") == 0)
+  {
+     Serial.println("setup");
+  }else if (strcmp(myString, "loop") == 0)
+  {
+    Serial.println("loop");
+  }
+  
 }
